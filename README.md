@@ -1,4 +1,4 @@
-# platform-check-if-must-send-push
+# Platform API - Check if must send push
 
 Example on how to check periodically for pending push notifications
 
