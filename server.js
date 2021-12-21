@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const APP_ID = 'YOUR APP ID HERE';
+const APP_ID = 'YOUR APPLICATION ID HERE';
 const PLATFORM_API_TOKEN = 'YOUR API TOKEN HERE';
 
 const pendingPush = [];
@@ -44,6 +44,7 @@ function checkIfPushNeeded(user, callback) {
                     const messageCreatedAt = channel.last_message.created_at;
                     if (userLastRead < messageCreatedAt) {
                         sendPushToMessages.push({
+                            userId: userId,
                             channelLastRead: new Date( userLastRead ),
                             lastMessageCreatedAt: new Date( messageCreatedAt ),
                             lastMessage: channel.last_message 
