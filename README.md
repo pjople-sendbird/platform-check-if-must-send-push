@@ -16,6 +16,11 @@ And this sample gets 50 users. You must implement a different logic for getting 
 The limit for max amount of users per page is 100. Use ```next``` to get the next ones.
 
 ```
+function getMyUsers(callback) {
+    sendRequest('users/?limit=50', (result) => {
+       ...
+    })
+ }
 ```
 
 ## Response
