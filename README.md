@@ -4,7 +4,21 @@ Example on how to check periodically for pending push notifications
 
 The idea is to get when the last message was sent and compare with the last time a user read the channel.
 
-## Response
+## Change the values
+
+Replace with your own values here:
+```
+const APP_ID = 'YOUR APPLICATION ID HERE';
+const PLATFORM_API_TOKEN = 'YOUR API TOKEN HERE';
+```
+
+And this sample gets 50 users. You must implement a different logic for getting more users.
+The limit for max amount of users per page is 100. Use ```next``` to get the next ones.
+
+```
+```
+
+## Response
 
 This is the response you finally will get:
 
