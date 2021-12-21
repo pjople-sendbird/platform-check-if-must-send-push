@@ -10,6 +10,7 @@ This is the response you finally will get:
 
 ```
 [{
+    userId: 'walter1',
     channelLastRead: 2021-12-06T12:59:05.070Z,
     lastMessageCreatedAt: 2021-12-21T11:25:32.070Z,
     lastMessage: {
@@ -38,3 +39,6 @@ This is the response you finally will get:
     }
 }]
 ```
+
+As you can see from the list, ```channelLastRead``` was on ```2021-12-06 at 12:59:05``` and the last message to the channel was sent on ```2021-12-21 11:25:32```
+This means that this channel has unread messages for this user. You need to send a message to user ID ```walter1```
