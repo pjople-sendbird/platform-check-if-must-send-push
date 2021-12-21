@@ -23,6 +23,12 @@ function getMyUsers(callback) {
  }
 ```
 
+## Run
+
+```
+node server.js
+```
+
 ## Response
 
 This is the response you finally will get:
